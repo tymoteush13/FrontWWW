@@ -1,4 +1,5 @@
 import {Link, useMatch, useResolvedPath} from 'react-router-dom';
+import { FaUserCircle } from 'react-icons/fa';
 
 export default function Navbar() {
     return ( 
@@ -12,7 +13,11 @@ export default function Navbar() {
                 </ul>
         </div>
             <ul className="nav-right">
+                <div className='user-icon'>
+                    <FaUserCircle/>
+                </div>
                 <li>
+                    
                     <Link to="/login">Login</Link>
                 </li>
             </ul>

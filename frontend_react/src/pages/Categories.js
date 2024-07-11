@@ -1,5 +1,9 @@
-export default function Categories() {
-    return <h1>Kategorie</h1>
-
-
+import React from 'react';
+const Categories = () => { 
+    return (
+        <div>
+            <h1>Categories</h1>
+        </div>
+    );
 }
+export default Categories;
