@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "./Logo_2.png";
+import logo from "./logo.png";
 
 interface Props {
   items: string[];
@@ -13,7 +13,11 @@ function Navbar({ items }: Props) {
     >
       <div className="container-fluid">
         <div className="collapse navbar-collapse">
-          <img src={logo} className="d-inline-block align-text-top"></img>
+          <img
+            src={logo}
+            className="d-inline-block align-text-top"
+            style={{ height: "80px" }}
+          ></img>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {items.map((item) => (
               <li className="nav-item" key={item}>
